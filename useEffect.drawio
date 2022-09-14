@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-13T02:58:53.593Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Z3l7ri4fWIMXRfYqDtcO" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-14T04:45:12.280Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="4tMLewprm_WwTt4Il1Nv" version="20.3.0" type="github">
   <diagram id="Q1O8JX786RVMudkXH0Y0" name="第 1 页">
-    <mxGraphModel dx="2377" dy="1377" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -175,7 +175,7 @@
         <mxCell id="-dKRlnVZoFf6JH3C2UQ4-52" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-dKRlnVZoFf6JH3C2UQ4-53" target="-dKRlnVZoFf6JH3C2UQ4-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-1" value="if (rootWithPendingPassiveEffects !== null)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-dKRlnVZoFf6JH3C2UQ4-52">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-1" value="if (rootWithPendingPassiveEffects !== null)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-dKRlnVZoFf6JH3C2UQ4-52" vertex="1" connectable="0">
           <mxGeometry x="-0.1539" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -263,32 +263,35 @@
         <mxCell id="-dKRlnVZoFf6JH3C2UQ4-73" value="&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;更改 state，触发更新&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="852" width="154" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-dKRlnVZoFf6JH3C2UQ4-74" target="zS6G1j2TNdugKzmZHnz_-2">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="-dKRlnVZoFf6JH3C2UQ4-74" target="zS6G1j2TNdugKzmZHnz_-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-dKRlnVZoFf6JH3C2UQ4-74" value="比较 deps，如果改变了，则会给当前 fiber 授予 Passive 的权限，并将该 effect 的 create 放进 upadteQueue 里。" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="496" y="1180" width="334" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="1330" width="410" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-3" value="更新" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-3" value="更新" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="1327.5" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zS6G1j2TNdugKzmZHnz_-5" target="zS6G1j2TNdugKzmZHnz_-6">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zS6G1j2TNdugKzmZHnz_-5" target="zS6G1j2TNdugKzmZHnz_-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-5" value="首先在&amp;nbsp;flushPassiveEffectsImpl 函数中，会做一个开关锁的逻辑，将&amp;nbsp;rootWithPendingPassiveEffects 置为 null" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-5" value="首先在&amp;nbsp;flushPassiveEffectsImpl 函数中，会做一个开关锁的逻辑，将&amp;nbsp;rootWithPendingPassiveEffects 置为 null" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="1357.5" width="297" height="52.5" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="zS6G1j2TNdugKzmZHnz_-6" target="zS6G1j2TNdugKzmZHnz_-8">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="zS6G1j2TNdugKzmZHnz_-6" target="zS6G1j2TNdugKzmZHnz_-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-6" value="遍历 fiber，如果有 Passive 则遍历其 upadteQueue，然后执行里头的 create" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-6" value="遍历 fiber，如果有 Passive 则遍历其 upadteQueue，然后执行里头的 create" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="1450" width="240" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="zS6G1j2TNdugKzmZHnz_-8" value="由于 rootWithPendingPassiveEffects = null 了，后续 commitRoot 的时候不会再处理 useEffect 的逻辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zS6G1j2TNdugKzmZHnz_-8" value="由于 rootWithPendingPassiveEffects = null 了，后续 commitRoot 的时候不会再处理 useEffect 的逻辑" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="354" y="1550" width="296" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2T7SoFJlMBIhRW7BNLOC-1" value="TODO：在更新的时候，貌似是根据绑定的事件不同，onClick 走异步 而 onInput 走同步，需要check一下" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1390" width="160" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
