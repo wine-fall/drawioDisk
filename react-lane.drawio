@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T02:59:57.139Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="2AN0O1u36wCY4S9jo0wC" version="20.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-20T07:00:32.618Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="oYc_E_nriXWu3w5sZrK4" version="20.4.1" type="github">
   <diagram id="Xz5dcwEycWzlKQeUu8vr" name="第 1 页">
     <mxGraphModel dx="2253" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -96,6 +96,9 @@
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-31" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;markRootUpdated&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="220" y="800" width="130" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-39" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#990000;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-33" target="jcw5m3FHX2k2lTRZ_1a_-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-33" value="决定是否要用 scheduler 执行本次更新，并开始更新 fiber tree" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="750" y="810" width="240" height="70" as="geometry" />
         </mxCell>
@@ -105,11 +108,30 @@
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-36" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;scheduleUpdateOnFiber&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-320" y="710" width="180" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-37" value="从 root.pendingLanes" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="1080" width="210" height="110" as="geometry" />
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-40" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#990000;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-37" target="jcw5m3FHX2k2lTRZ_1a_-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="1124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-37" value="从 root.pendingLanes 中选取正在执行的 lane，并确定其过期时间，若已有过期时间并已过期，则将这个 lane 添加到 root.expiredLanes 中" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="1079" width="300" height="90" as="geometry" />
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-38" value="&lt;font color=&quot;#990000&quot;&gt;markStarvedLanesAsExpired&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-400" y="1050" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#990000;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-41" target="jcw5m3FHX2k2lTRZ_1a_-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="1124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-41" value="&lt;font color=&quot;#000000&quot;&gt;获取下一个要执行的 lane，由于高优先级的 lane 先执行，所以这就是获取当前优先级最高的 lane&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1087" width="280" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-42" value="&lt;font color=&quot;#990000&quot;&gt;getNextLane&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1065" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-44" value="&lt;font color=&quot;#000000&quot;&gt;获取nextLane 的优先级并与现有的、正在执行的优先级（root.callbackPriority）进行比对：若相等，则直接复用；若大于，则取消之前的 callback，加入新的 callback&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1090" width="320" height="64" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
