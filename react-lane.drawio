@@ -1,1 +1,117 @@
-<mxfile host="app.diagrams.net" modified="2022-10-20T02:29:59.566Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" version="20.4.1" etag="edboDwW5XR3iDlW-2tsz" type="github"><diagram id="Xz5dcwEycWzlKQeUu8vr">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-20T02:59:57.139Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="2AN0O1u36wCY4S9jo0wC" version="20.4.1" type="github">
+  <diagram id="Xz5dcwEycWzlKQeUu8vr" name="第 1 页">
+    <mxGraphModel dx="2253" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="740" width="1300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="450" width="1030" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-2" target="jcw5m3FHX2k2lTRZ_1a_-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-6" value="eg: click" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jcw5m3FHX2k2lTRZ_1a_-5">
+          <mxGeometry x="-0.0889" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-2" value="首次渲染在 root 注册所有事件时，会给不同的事件赋予不同的优先级" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="50" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-3" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;createEventListenerWrapperWithPriority&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-4" target="jcw5m3FHX2k2lTRZ_1a_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-4" value="触发更新" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-9" target="jcw5m3FHX2k2lTRZ_1a_-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-9" value="调用 dispatchSetState 作为更新的入口，开始更新" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="340" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-11" target="jcw5m3FHX2k2lTRZ_1a_-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-11" target="jcw5m3FHX2k2lTRZ_1a_-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-11" value="获取事件的优先级（获取 lane）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="547.5" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-13" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;requestUpdateLane&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="530" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-16" target="jcw5m3FHX2k2lTRZ_1a_-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-16" value="根据该优先级确定当前 update 的优先级" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="521.25" width="250" height="112.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-18" value="update 用于构成 update 链，是一个循环链表，存储与 updateQueue 中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="490" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-19" target="jcw5m3FHX2k2lTRZ_1a_-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="810" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-19" value="开始执行 scheduler 前的准备逻辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="548" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-20" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;scheduleUpdateOnFiber&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="530" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-23" target="jcw5m3FHX2k2lTRZ_1a_-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-23" value="从当前 fiber 向上直到 root，将这次的优先级（也就是 lane）赋到每个 fiber 上，更改字段有：fiber.lanes, fiber. childLanes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="810" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-24" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;markUpdateLaneFromFiberToRoot&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="790" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-27" value="&lt;font color=&quot;#990000&quot;&gt;dispatchSetState&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="440" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-28" target="jcw5m3FHX2k2lTRZ_1a_-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-28" value="&lt;font color=&quot;#000000&quot;&gt;更新 root.pendingLanes 以及 root.eventTimes，这两者也即**当前正在执行的优先级** 和 **这些优先级发起的时间**&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="820" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-31" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;markRootUpdated&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="800" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-33" value="决定是否要用 scheduler 执行本次更新，并开始更新 fiber tree" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="750" y="810" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-34" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;ensureRootIsScheduled&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="670" y="780" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-36" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;scheduleUpdateOnFiber&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="710" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-37" value="从 root.pendingLanes" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="1080" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-38" value="&lt;font color=&quot;#990000&quot;&gt;markStarvedLanesAsExpired&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="1050" width="190" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
