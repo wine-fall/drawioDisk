@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-21T02:16:33.315Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="dTc92Sgz8SpLBGCwkBVa" version="20.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-21T02:30:09.707Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="A_WUj9ySPyY6omW-jbCV" version="20.4.2" type="github">
   <diagram id="Xz5dcwEycWzlKQeUu8vr" name="第 1 页">
     <mxGraphModel dx="2253" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -122,7 +122,7 @@
             <mxPoint x="100" y="1124" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-37" value="从 root.pendingLanes 中选取正在执行的 lane，并确定其过期时间，若已有过期时间并已过期，则将这个 lane 添加到 root.expiredLanes 中" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-37" value="从 root.pendingLanes 中选取正在执行的 lane，并确定其过期时间。若已有过期时间并已过期，则将这个 lane 添加到 root.expiredLanes 中，否则给该 lane 添加一个过期时间。过期时间存储于&amp;nbsp;root.expirationTimes 中" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-280" y="1079" width="300" height="90" as="geometry" />
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-38" value="&lt;font color=&quot;#990000&quot;&gt;markStarvedLanesAsExpired&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
@@ -201,17 +201,17 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-59" value="正常进行 scheduler 逻辑" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="745" y="1385" width="185" height="125" as="geometry" />
+          <mxGeometry x="730" y="1385" width="185" height="125" as="geometry" />
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-63" value="当前 lane 已经非常紧急了，同步处理" style="rhombus;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="720" y="1235" width="160" height="160" as="geometry" />
+          <mxGeometry x="710" y="1220" width="160" height="160" as="geometry" />
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-67" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-66" target="jcw5m3FHX2k2lTRZ_1a_-68" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="50" y="1704" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-66" value="拿到remainingLanes：从root 的 lane 以及其 child lane 上获取" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-66" value="拿到还未执行的lanes，也就是remainingLanes：从root 的 lane 以及其 child lane 上获取" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-360" y="1654" width="290" height="100" as="geometry" />
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-69" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="jcw5m3FHX2k2lTRZ_1a_-68" target="jcw5m3FHX2k2lTRZ_1a_-70" edge="1">
@@ -222,8 +222,8 @@
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-68" value="用 remainingLanes更新 root.pendingLanes 等一系列字段" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="115" y="1662" width="345" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-70" value="再次执行一次&amp;nbsp;&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;ensureRootIsScheduled，以防&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="530" y="1670" width="310" height="64" as="geometry" />
+        <mxCell id="jcw5m3FHX2k2lTRZ_1a_-70" value="再次执行一次&amp;nbsp;&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;ensureRootIsScheduled，&lt;/span&gt;&lt;span style=&quot;font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;以防 remainingLanes 不为空，则需要将剩余的 lanes 再执行&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="530" y="1660" width="360" height="74" as="geometry" />
         </mxCell>
         <mxCell id="jcw5m3FHX2k2lTRZ_1a_-73" value="&lt;span style=&quot;color: rgb(153, 0, 0); font-family: Menlo, Monaco, Consolas, &amp;quot;Courier New&amp;quot;, monospace; text-align: start; background-color: rgb(248, 248, 248);&quot;&gt;ensureRootIsScheduled&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="-498" y="1000" width="170" height="40" as="geometry" />
