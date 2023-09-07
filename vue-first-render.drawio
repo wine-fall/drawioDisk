@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2023-09-07T11:49:12.695Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.2" etag="nCFSICTBWsIiA3JF8TUx" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-07T12:42:06.246Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="lUE1j5bVvzrCZHbU0T3T" version="21.7.2" type="github">
   <diagram name="第 1 页" id="jVa2W7IPWwnAXI4XaTAD">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="simCPiNDv_beY422lD6f-1" value="Vue.createApp" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="110" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="simCPiNDv_beY422lD6f-2" value="这个方法被Object.defineProperty 劫持了，所以会先走一下 Object.defineProperty" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="270" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
