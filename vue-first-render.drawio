@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-13T11:09:27.481Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="xp5Cvz8UYfLwURz1xfec" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-13T12:05:29.507Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="7gHELwjmh2YmV3tK1S5s" version="21.7.4" type="github">
   <diagram name="第 1 页" id="jVa2W7IPWwnAXI4XaTAD">
     <mxGraphModel dx="2261" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -387,6 +387,11 @@
             <mxPoint x="-120.4986009174313" y="2312.6099999999997" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="8fbml9rFBPQE95AYInHe-69" value="对 template 进行 compile，等到一串 code，也就是要执行的代码" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zJVTqqphNSBY5kHAIyzm-109">
+          <mxGeometry x="-0.1179" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="zJVTqqphNSBY5kHAIyzm-107" value="finishComponentSetup" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-231" y="2250" width="195" height="61" as="geometry" />
         </mxCell>
@@ -395,8 +400,8 @@
             <mxPoint x="-133" y="2491.11" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zJVTqqphNSBY5kHAIyzm-110" value="给Component.render挂载一些东西&lt;br&gt;并同时挂载到 instance.render 上" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-243.62" y="2361.1099999999997" width="246.25" height="60" as="geometry" />
+        <mxCell id="zJVTqqphNSBY5kHAIyzm-110" value="给Component.render挂载这个 compile 出的 code&lt;br&gt;并同时挂载到 instance.render 上&lt;br&gt;这个 instance.render 的调用会生成当前 Instance 的&amp;nbsp;subtree" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-339.62" y="2361.11" width="339.62" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8fbml9rFBPQE95AYInHe-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8fbml9rFBPQE95AYInHe-2" target="8fbml9rFBPQE95AYInHe-7">
           <mxGeometry relative="1" as="geometry">
@@ -514,9 +519,17 @@
             <mxPoint x="480" y="2230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8fbml9rFBPQE95AYInHe-44" value="找到 child，并创建下一个 vnode" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8fbml9rFBPQE95AYInHe-43">
+        <mxCell id="8fbml9rFBPQE95AYInHe-44" value="找到 subtree，并创建下一个 vnode" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8fbml9rFBPQE95AYInHe-43">
           <mxGeometry x="0.0952" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8fbml9rFBPQE95AYInHe-71" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="8fbml9rFBPQE95AYInHe-41" target="zJVTqqphNSBY5kHAIyzm-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8fbml9rFBPQE95AYInHe-72" value="获得 subtree，如果是 dom 类型的subtree&lt;br&gt;会在subtree.type 标注是什么类型的dom" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8fbml9rFBPQE95AYInHe-71">
+          <mxGeometry x="0.0386" y="1" relative="1" as="geometry">
+            <mxPoint x="4" y="-16" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8fbml9rFBPQE95AYInHe-41" value="render.call()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -539,9 +552,6 @@
         </mxCell>
         <mxCell id="8fbml9rFBPQE95AYInHe-45" value="vNode" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="470" y="2225" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8fbml9rFBPQE95AYInHe-46" value="// todo 怎么找 child ？" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="2210" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="8fbml9rFBPQE95AYInHe-52" value="// todo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="2416.1099999999997" width="80" height="30" as="geometry" />
