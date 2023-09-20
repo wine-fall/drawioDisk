@@ -1,11 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2023-09-20T11:15:02.336Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="sg9uS7KTnnKOQqH4a2KI" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-20T12:40:05.789Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="ZgqATUSWtHTepa6NKnNI" version="21.7.5" type="github">
   <diagram name="第 1 页" id="5L3_wMHRsmuWzl5aIb_H">
     <mxGraphModel dx="2261" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-41" target="aNz80nmm4NGJI3xFm9BB-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="610" width="810" height="720" as="geometry" />
+        </mxCell>
         <mxCell id="4hTD-eUTdhLRPdfj7wrx-3" value="在生成 subtree 的时候，通过对 render (对 template compile 出来的结果) 的调用，会给当前的 subtree 挂上 dynamicProps，其中会有事件名" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-440" y="510" width="290" height="70" as="geometry" />
+          <mxGeometry x="-650" y="310" width="290" height="70" as="geometry" />
         </mxCell>
         <mxCell id="4hTD-eUTdhLRPdfj7wrx-4" value="对 template 进行 compile 的时候，会解析出各个props，事件名等" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry y="30" width="380" height="60" as="geometry" />
@@ -52,25 +60,137 @@
         <mxCell id="4hTD-eUTdhLRPdfj7wrx-13" value="baseParse(template)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="430" width="140" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="aNz80nmm4NGJI3xFm9BB-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-3" target="aNz80nmm4NGJI3xFm9BB-11">
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-3" target="aNz80nmm4NGJI3xFm9BB-17">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="130" y="660" as="targetPoint" />
+            <mxPoint x="180" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aNz80nmm4NGJI3xFm9BB-3" value="parseChildren" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="520" width="120" height="60" as="geometry" />
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-3" value="parseChildren" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="220" y="520" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aNz80nmm4NGJI3xFm9BB-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-5" target="aNz80nmm4NGJI3xFm9BB-7">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-5" target="aNz80nmm4NGJI3xFm9BB-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="1450" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="aNz80nmm4NGJI3xFm9BB-5" value="getSelection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="555" width="120" height="50" as="geometry" />
+          <mxGeometry x="440" y="520" width="130" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aNz80nmm4NGJI3xFm9BB-7" value="createRoot" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="810" width="120" height="60" as="geometry" />
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-12" value="// todo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="500" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="aNz80nmm4NGJI3xFm9BB-11" value="parseTxt" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="630" width="120" height="60" as="geometry" />
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="710" as="sourcePoint" />
+            <mxPoint x="460" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-16" value="template 是 root dom 下的 innerHTML" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-17" target="aNz80nmm4NGJI3xFm9BB-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-21" value="解析当前行是 element 的话（匹配尖括号），则进入&amp;nbsp;parseElement 逻辑" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aNz80nmm4NGJI3xFm9BB-18">
+          <mxGeometry x="-0.1077" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-17" value="这里会一行行的解析 template (也就是 context.source) ，遍历行的逻辑在&amp;nbsp;advanceBy 中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="630" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-22" target="aNz80nmm4NGJI3xFm9BB-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-22" value="parseElement" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="780" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-25" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-24" target="aNz80nmm4NGJI3xFm9BB-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-27" value="解析 props" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aNz80nmm4NGJI3xFm9BB-25">
+          <mxGeometry x="0.0188" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-24" value="parseTag" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="114" y="870" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-28" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-26" target="aNz80nmm4NGJI3xFm9BB-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-32" value="拿到key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aNz80nmm4NGJI3xFm9BB-28">
+          <mxGeometry x="-0.1111" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-26" value="parseAttributes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="980" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-30" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-29" target="aNz80nmm4NGJI3xFm9BB-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-33" value="拿到 vallue" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aNz80nmm4NGJI3xFm9BB-30">
+          <mxGeometry x="-0.103" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-29" value="parseAttribute" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-31" target="aNz80nmm4NGJI3xFm9BB-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-31" value="parseAttributeValue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="1090" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-36" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-35" target="aNz80nmm4NGJI3xFm9BB-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-35" value="如果 attribute 是 @ 开头，则匹配到 on" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-37" target="aNz80nmm4NGJI3xFm9BB-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-250" y="1130" />
+              <mxPoint x="-360" y="920" />
+              <mxPoint x="-160" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-40" value="继续处理&amp;nbsp; context 并把结果当做当前 element 的 children" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="aNz80nmm4NGJI3xFm9BB-38">
+          <mxGeometry x="-0.761" relative="1" as="geometry">
+            <mxPoint x="12" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-37" value="取到当前 element 并放进 ancestors 里" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-43" target="aNz80nmm4NGJI3xFm9BB-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-43" value="得到一个个 node，每个node 包含 tag（dom 的类型）以及 props，还有当前 dom 下的 children" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1370" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-45" value="创建 root" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1490" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
