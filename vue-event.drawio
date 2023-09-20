@@ -1,46 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2023-09-15T02:07:05.437Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="SOQ0EvMSgSID5bv4byxE" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-20T09:17:26.439Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="G0gHbbmaGwtAInTDjymM" version="21.7.5" type="github">
   <diagram name="第 1 页" id="5L3_wMHRsmuWzl5aIb_H">
     <mxGraphModel dx="2261" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-3" value="在生成 subtree 的时候，通过对 render (对 template compile 出来的结果) 的调用，会给当前的 subtree 挂上 dynamicProps，其中会有事件名" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-3" value="在生成 subtree 的时候，通过对 render (对 template compile 出来的结果) 的调用，会给当前的 subtree 挂上 dynamicProps，其中会有事件名" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-200" y="585" width="290" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-4" value="对 template 进行 compile 的时候，会解析出各个props，事件名等" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-4" value="对 template 进行 compile 的时候，会解析出各个props，事件名等" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry y="30" width="380" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4hTD-eUTdhLRPdfj7wrx-6" target="4hTD-eUTdhLRPdfj7wrx-9">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4hTD-eUTdhLRPdfj7wrx-6" target="4hTD-eUTdhLRPdfj7wrx-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-8" value="……" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4hTD-eUTdhLRPdfj7wrx-7">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-8" value="……" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4hTD-eUTdhLRPdfj7wrx-7" vertex="1" connectable="0">
           <mxGeometry x="-0.018" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-6" value="finishComponentSetup" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-6" value="finishComponentSetup" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="360" y="110" width="250" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4hTD-eUTdhLRPdfj7wrx-9" target="4hTD-eUTdhLRPdfj7wrx-11">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-10" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4hTD-eUTdhLRPdfj7wrx-9" target="4hTD-eUTdhLRPdfj7wrx-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="360" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-9" value="baseCompile" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-9" value="baseCompile" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="230" width="186" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4hTD-eUTdhLRPdfj7wrx-11" target="4hTD-eUTdhLRPdfj7wrx-13">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="4hTD-eUTdhLRPdfj7wrx-11" target="4hTD-eUTdhLRPdfj7wrx-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="410" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-11" value="const ast = isString(template) ? baseParse(template, options) : template" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-11" value="const ast = isString(template) ? baseParse(template, options) : template" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="330" width="420" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4hTD-eUTdhLRPdfj7wrx-13" value="baseParse(template)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4hTD-eUTdhLRPdfj7wrx-13" target="aNz80nmm4NGJI3xFm9BB-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4hTD-eUTdhLRPdfj7wrx-13" target="aNz80nmm4NGJI3xFm9BB-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4hTD-eUTdhLRPdfj7wrx-13" value="baseParse(template)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="340" y="430" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-3" target="aNz80nmm4NGJI3xFm9BB-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-3" value="parseChildren" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aNz80nmm4NGJI3xFm9BB-5" target="aNz80nmm4NGJI3xFm9BB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-5" value="getSelection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="555" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aNz80nmm4NGJI3xFm9BB-7" value="createRoot" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="700" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
