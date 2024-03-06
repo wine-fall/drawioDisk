@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T07:50:21.410Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="yaQnoADxSntkK6pxPxLG" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T10:01:09.025Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="ImfBZ6Hj0caPWGQu3xDx" version="21.7.5" type="github">
   <diagram name="第 1 页" id="gwF9UIsrsdVw0fPzqFTr">
-    <mxGraphModel dx="2261" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2514" dy="925" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,13 +12,24 @@
         <mxCell id="ySQks6wrrYL4S_Miv_2F-1" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;createBrowserRouter&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="140" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ySQks6wrrYL4S_Miv_2F-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-3" target="ySQks6wrrYL4S_Miv_2F-5">
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-3" target="ySQks6wrrYL4S_Miv_2F-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="220" y="390" as="targetPoint" />
+            <mxPoint x="-370" y="407.52" as="targetPoint" />
+            <mxPoint x="-160" y="299.99549295774636" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ySQks6wrrYL4S_Miv_2F-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;劫持 get Rutes 方法，使其返回 dataRoutes&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-4">
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;劫持 get Routes 方法，使其返回 dataRoutes&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-4">
           <mxGeometry x="-0.0775" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-3" target="ySQks6wrrYL4S_Miv_2F-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-38" value="first paint" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-37">
+          <mxGeometry x="-0.1518" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -27,7 +38,7 @@
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-5" target="ySQks6wrrYL4S_Miv_2F-10">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="590" as="targetPoint" />
+            <mxPoint x="-330" y="607.52" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-11" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;作为 props 传给 RouterProvider&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-9">
@@ -36,17 +47,17 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-5" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 13px; line-height: 20px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;convertRoutesToDataRoutes&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="362.98" width="250" height="60" as="geometry" />
+          <mxGeometry x="-580" y="380.5" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-6" value="遍历 routes 给每个 route 创建一个 id" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-30" y="310" width="120" height="60" as="geometry" />
+          <mxGeometry x="-620" y="327.52" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-7" value="通过闭包定义很多函数挂载到当前这个 routes 上" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="540" y="200" width="260" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-10" target="ySQks6wrrYL4S_Miv_2F-14">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="310" y="710" as="targetPoint" />
+            <mxPoint x="-280" y="727.52" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-13" value="包很多层 Provider" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-12">
@@ -55,39 +66,34 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-10" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;RouterProvider&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="420" y="500" width="220" height="60" as="geometry" />
+          <mxGeometry x="-170" y="517.52" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-14" target="ySQks6wrrYL4S_Miv_2F-16">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="730" as="targetPoint" />
+            <mxPoint x="-210" y="747.52" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-14" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;Router&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="570" width="120" height="60" as="geometry" />
+          <mxGeometry x="-490" y="587.52" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-16" target="ySQks6wrrYL4S_Miv_2F-19">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="290" y="740" as="targetPoint" />
+            <mxPoint x="-300" y="757.52" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-16" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;DataRoutes&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="640" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ySQks6wrrYL4S_Miv_2F-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-19" target="ySQks6wrrYL4S_Miv_2F-21">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="420" y="850" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry x="-150" y="657.52" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-19" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;useRoutesImpl&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="710" width="120" height="60" as="geometry" />
+          <mxGeometry x="-360" y="727.52" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ySQks6wrrYL4S_Miv_2F-21" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;renderedMatches&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="65" y="890" width="180" height="60" as="geometry" />
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-21" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;生成renderedMatches，是一个 ReactElement&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="1140" width="185" height="82.48" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-23" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 13px; line-height: 20px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;_renderMatches 创建&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="195" y="880" width="160" height="40" as="geometry" />
+          <mxGeometry x="-380" y="880" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ySQks6wrrYL4S_Miv_2F-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.906;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-25" target="ySQks6wrrYL4S_Miv_2F-23">
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.906;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-25" target="ySQks6wrrYL4S_Miv_2F-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-27" value="state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-26">
@@ -96,7 +102,69 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ySQks6wrrYL4S_Miv_2F-25" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 13px; line-height: 20px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;let&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; [&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;state&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;setStateImpl&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;] &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;React&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;useState&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;router&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;state&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="480" width="480" height="40" as="geometry" />
+          <mxGeometry x="-30" y="497.52" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;entryX=0.956;entryY=0.562;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-28" target="ySQks6wrrYL4S_Miv_2F-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-240" y="908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-30" value="matches" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ySQks6wrrYL4S_Miv_2F-29">
+          <mxGeometry x="-0.0761" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-28" target="ySQks6wrrYL4S_Miv_2F-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="887.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-28" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; line-height: 20px;&quot;&gt;let &lt;span style=&quot;color: #9cdcfe;&quot;&gt;matches&lt;/span&gt; &lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt; &lt;span style=&quot;color: #dcdcaa;&quot;&gt;matchRoutes&lt;/span&gt;(&lt;span style=&quot;color: #9cdcfe;&quot;&gt;routes&lt;/span&gt;, { &lt;span style=&quot;color: #9cdcfe;&quot;&gt;pathname&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #9cdcfe;&quot;&gt;remainingPathname&lt;/span&gt; });&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="747.52" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-32" value="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;ol&gt;&lt;li&gt;通过 location 拿到路径（pathname）&lt;/li&gt;&lt;li&gt;把 routes 铺平得到 branches，并且每个 branches 计算出一个 score 用于排序&lt;/li&gt;&lt;li&gt;排序 branches，使得底层的 route 放到数组的最前面，顶层的则放到最后面&lt;/li&gt;&lt;li&gt;遍历每一个 branches[i] 并且调用&amp;nbsp;matchRouteBranch&lt;/li&gt;&lt;li&gt;返回 mathces 是一个数组&lt;/li&gt;&lt;/ol&gt;&lt;/blockquote&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="867.52" width="370" height="202.48" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-33" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 13px; line-height: 20px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;matchRoutes&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="847.52" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-39" target="ySQks6wrrYL4S_Miv_2F-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-39" value="根据第一次的 url 匹配出 matches&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="380.5" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-41" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-40" target="ySQks6wrrYL4S_Miv_2F-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-40" value="&lt;span style=&quot;color: rgb(220, 220, 170); font-family: Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(31, 31, 31); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;matchRoutes&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="737.52" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-44" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-43" target="ySQks6wrrYL4S_Miv_2F-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="910" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-43" value="返回一个 router，并调用 router.initialize" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="470" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-45" target="ySQks6wrrYL4S_Miv_2F-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-45" value="初始化全局作用域下的&amp;nbsp;unlistenHistory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="560" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="ySQks6wrrYL4S_Miv_2F-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ySQks6wrrYL4S_Miv_2F-47" value="最终返回的还是一个router" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="687.52" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
